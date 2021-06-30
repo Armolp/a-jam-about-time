@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{aca7a997-aee2-4786-b0c5-49bf590b33ca}">
+		<property name="assetPath">
+			<value>INTRO Stem II.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>39.732244897959184</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5fb9fd3-28c7-4a11-b9a0-1673aca7c9c3}</destination>
+		</relationship>
+	</object>
+</objects>

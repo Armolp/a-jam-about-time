@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{4c0dc1e6-030e-4147-956b-5b95c3238ba5}">
+		<property name="name">
+			<value>Xpos</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0790789b-901f-408f-bac5-97ae29f48b5f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{effbcdce-e208-4bc4-9fa3-306b44d39be6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{effbcdce-e208-4bc4-9fa3-306b44d39be6}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.10999999940395355</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{23aa7190-6ed9-4bd1-bb4e-ad529a750579}</destination>
+		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{23aa7190-6ed9-4bd1-bb4e-ad529a750579}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>

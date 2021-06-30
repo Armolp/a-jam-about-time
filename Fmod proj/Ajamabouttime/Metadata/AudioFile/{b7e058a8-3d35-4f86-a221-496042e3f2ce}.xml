@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b7e058a8-3d35-4f86-a221-496042e3f2ce}">
+		<property name="assetPath">
+			<value>LOOP STEM II.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>60.508479166666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c5fb9fd3-28c7-4a11-b9a0-1673aca7c9c3}</destination>
+		</relationship>
+	</object>
+</objects>

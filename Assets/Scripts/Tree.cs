@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : MonoBehaviour
+public class Tree : MonoBehaviour, TimeBehaviour
 {
     public List<Sprite> sprites;
     public int currentState = 0;

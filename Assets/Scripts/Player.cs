@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,13 +11,13 @@ public class Player : MonoBehaviour
 
     private Vector3 nextPosition;
 
-    Tree[] trees;
+    TimeBehaviour[] timeAffected;
 
     // Start is called before the first frame update
     void Start()
     {
         nextPosition = transform.position;
-        trees = FindObjectsOfType<Tree>();
+        timeAffected = FindObjectsOfType<MonoBehaviour>().OfType<TimeBehaviour>().ToArray();
     }
 
     // Update is called once per frame
@@ -31,9 +32,9 @@ public class Player : MonoBehaviour
                 nextPosition.x++;
 
                 // move time forwards
-                foreach(Tree tree in trees)
+                foreach(TimeBehaviour timeObj in timeAffected)
                 {
-                    tree.AgeForwards();
+                    timeObj.AgeForwards();
                 }
             }
             else if (Input.GetAxis("Horizontal") < 0 && PositionIsAvilable(nextPosition + new Vector3(-1, 0)))
@@ -41,9 +42,9 @@ public class Player : MonoBehaviour
                 nextPosition.x--;
 
                 // move time backwards
-                foreach (Tree tree in trees)
+                foreach (TimeBehaviour timeObj in timeAffected)
                 {
-                    tree.AgeBackwards();
+                    timeObj.AgeBackwards();
                 }
             }
             else if (Input.GetAxis("Vertical") > 0 && PositionIsAvilable(nextPosition + new Vector3(0, 1)))

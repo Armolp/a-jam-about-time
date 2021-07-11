@@ -46,7 +46,7 @@ public class Vines : MonoBehaviour, TimeBehaviour
 
     public void AgeBackwards()
     {
-        if (vineObjects.Count > 1)
+        if (vineObjects.Count >= 1)
         {
             GameObject vine = vineObjects[vineObjects.Count - 1];
             vineObjects.RemoveAt(vineObjects.Count - 1);

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6137189684767037992
+--- !u!1 &8092358928936287238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8525698861205750326}
-  - component: {fileID: 7481839640793173691}
-  - component: {fileID: 7481839640793173688}
-  m_Layer: 6
-  m_Name: Wall
+  - component: {fileID: 8092358928936287235}
+  - component: {fileID: 8092358928936287236}
+  - component: {fileID: 8092358928936287237}
+  - component: {fileID: 8092358928936287234}
+  m_Layer: 0
+  m_Name: Ice Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8525698861205750326
+--- !u!4 &8092358928936287235
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6137189684767037992}
+  m_GameObject: {fileID: 8092358928936287238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7481839640793173691
+--- !u!212 &8092358928936287236
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6137189684767037992}
+  m_GameObject: {fileID: 8092358928936287238}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4783d4beb4fe6d04e808663d8ddc9d6a, type: 3}
+  m_Sprite: {fileID: -4992962603188562240, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,13 +84,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7481839640793173688
+--- !u!114 &8092358928936287237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092358928936287238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966ef13f721b7e84a86d913f82b48ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -4992962603188562240, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: -1976289982353310898, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: 2349617778809766582, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: -4465595664004050307, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: 4120807370461491834, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: 748442994539115328, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  - {fileID: 133951028614449538, guid: 91fddfca128cf2e44ab6e8b05fa5a18a, type: 3}
+  currentState: 0
+  whenIsObstacle: 5
+--- !u!61 &8092358928936287234
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6137189684767037992}
+  m_GameObject: {fileID: 8092358928936287238}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

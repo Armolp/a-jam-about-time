@@ -1,8 +1,10 @@
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Player : MonoBehaviour
     public LayerMask obstacleLayer;
 
     private Vector3 nextPosition;
+    StudioEventEmitter emitter;
 
     TimeBehaviour[] timeAffected;
 
@@ -18,11 +21,19 @@ public class Player : MonoBehaviour
     {
         nextPosition = transform.position;
         timeAffected = FindObjectsOfType<MonoBehaviour>().OfType<TimeBehaviour>().ToArray();
+
+
+        var target = GameObject.Find("Music Lvl1 Emitter");
+        emitter = target.GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        float Xpos = (transform.position.x + 15 / 2.0f) / 15;
+        emitter.SetParameter("Xpos", 1);
+
+        nextPosition.z = transform.position.z;
         transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * UnityEngine.Time.deltaTime);
 
         if (Vector3.Distance(transform.position, nextPosition) == 0)
@@ -54,6 +65,11 @@ public class Player : MonoBehaviour
             else if (Input.GetAxis("Vertical") < 0 && PositionIsAvilable(nextPosition + new Vector3(0, -1)))
             {
                 nextPosition.y--;
+            }
+            else if (Input.GetButton("Reset"))
+            {
+                int currentSceneIdx = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIdx);
             }
         }
     }

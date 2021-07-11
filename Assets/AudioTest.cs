@@ -18,6 +18,6 @@ public class AudioTest : MonoBehaviour
     {
         Transform tr = player.GetComponent<Transform>();
         // tr.x
-        Xpos = (tr.position.x - 15 / 2.0) / 15;
+        Xpos = (tr.position.x + 15 / 2.0) / 15;
     }
 }

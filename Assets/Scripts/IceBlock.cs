@@ -1,10 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : MonoBehaviour, TimeBehaviour
+public class IceBlock : MonoBehaviour, TimeBehaviour
 {
+
     public List<Sprite> sprites;
     public int currentState = 0;
     int whenIsObstacle = 4;
@@ -29,10 +29,11 @@ public class Tree : MonoBehaviour, TimeBehaviour
         if (currentState > sprites.Count - 1)
             currentState = sprites.Count - 1;
 
-        if (currentState < whenIsObstacle)
+        if (currentState > whenIsObstacle)
         {
             gameObject.layer = LayerMask.NameToLayer("Default");
-        } else
+        }
+        else
         {
             gameObject.layer = LayerMask.NameToLayer("Obstacle");
         }

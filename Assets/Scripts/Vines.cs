@@ -5,9 +5,9 @@ using UnityEngine;
 public class Vines : MonoBehaviour, TimeBehaviour
 {
     public int startingHeight = 1;
-    public int maxHeight = 10;
     public GameObject template;
 
+    int maxHeight = 10;
     SpriteRenderer spriteRenderer;
     List<GameObject> vineObjects;
 
@@ -46,8 +46,11 @@ public class Vines : MonoBehaviour, TimeBehaviour
 
     public void AgeBackwards()
     {
-        GameObject vine = vineObjects[vineObjects.Count - 1];
-        vineObjects.RemoveAt(vineObjects.Count - 1);
-        Destroy(vine);
+        if (vineObjects.Count > 1)
+        {
+            GameObject vine = vineObjects[vineObjects.Count - 1];
+            vineObjects.RemoveAt(vineObjects.Count - 1);
+            Destroy(vine);
+        }
     }
 }

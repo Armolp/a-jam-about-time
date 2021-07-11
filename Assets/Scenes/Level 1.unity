@@ -184,11 +184,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
---- !u!1 &94449557 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6668797147164481132, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
-  m_PrefabInstance: {fileID: 6668797147204401657}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &99145545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -654,14 +649,13 @@ GameObject:
   m_Component:
   - component: {fileID: 876140487}
   - component: {fileID: 876140486}
-  - component: {fileID: 876140488}
   m_Layer: 0
   m_Name: Music Lvl1 Emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &876140486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +671,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Mx/Music Lvl1
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -699,20 +693,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &876140488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876140485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40a2c3846ce319b48883a466f661d9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xpos: 0
-  player: {fileID: 94449557}
 --- !u!1001 &1112254108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1299,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668797147164481134, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6668797147164481134, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
       propertyPath: m_LocalRotation.w

@@ -631,9 +631,9 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Mx/Music Lvl1
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 0
   AllowFadeout: 1
-  TriggerOnce: 0
+  TriggerOnce: 1
   Preload: 0
   Params: []
   OverrideAttenuation: 0

@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (12)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -193,7 +193,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (6)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -343,7 +343,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (8)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -404,7 +404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (5)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -456,6 +456,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
+--- !u!1 &306133172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6668797147164481132, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
+  m_PrefabInstance: {fileID: 6668797147204401657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &306133176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306133172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  parameter: Xpos
+  TriggerEvent: 1
+  value: 1
 --- !u!1001 &373691589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,7 +486,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (2)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -526,7 +547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (13)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -578,6 +599,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
+--- !u!1 &645673114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645673116}
+  - component: {fileID: 645673115}
+  m_Layer: 0
+  m_Name: Music Lvl1 Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &645673115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645673114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Mx/Music Lvl1
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &645673116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645673114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &774056385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,7 +662,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (10)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -639,60 +714,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
---- !u!1 &876140485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 876140487}
-  - component: {fileID: 876140486}
-  m_Layer: 0
-  m_Name: Music Lvl1 Emitter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &876140486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876140485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Mx/Music Lvl1
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!4 &876140487
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876140485}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1112254108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -702,7 +723,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (4)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -763,7 +784,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (9)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -824,7 +845,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (3)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -885,7 +906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (7)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -946,7 +967,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (1)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -1007,7 +1028,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (11)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -1068,7 +1089,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Name
-      value: Wall (14)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6137189684767037992, guid: 416e4ca00ae6ce1448f9c0cff94f69bc, type: 3}
       propertyPath: m_Layer
@@ -1179,6 +1200,34 @@ PrefabInstance:
       propertyPath: currentState
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 6853316077166303748, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 4134985361545656292, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -1566730818833404899, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -7301469273254094464, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 4246777929600769233, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -1089773682390131457, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
+    - target: {fileID: 388870861254775219, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 3690649294209121615, guid: c0766a2ec2b282d4682f7dbdc6497e73, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29767505bf46d4f45b24b97934903e92, type: 3}
 --- !u!1001 &6327775498331025977

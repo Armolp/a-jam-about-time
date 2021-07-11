@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        
+    }
+
     public void StartButton()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);

@@ -42,7 +42,7 @@ MonoBehaviour:
   - {fileID: 4377359375836194560}
   StringsBanks:
   - {fileID: 3091131976037406112}
-  stringsBankWriteTime: 637609166528264366
+  stringsBankWriteTime: 637615790833558931
   cacheVersion: 6
 --- !u!114 &46130752130990949
 MonoBehaviour:
@@ -82,12 +82,32 @@ MonoBehaviour:
   Path: Fmod proj/Ajamabouttime/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637609166528264366
+  lastModified: 637615790833558931
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 848
   Exists: 1
+--- !u!114 &3639096112466324588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Xpos
+  m_EditorClassIdentifier: 
+  Name: Xpos
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1855888389
+    data2: 1609885230
+  Exists: 0
 --- !u!114 &4377359375836194560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +123,27 @@ MonoBehaviour:
   Path: Fmod proj/Ajamabouttime/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637609166528254367
+  lastModified: 637615790833538973
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &8749964080072371673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Xpos
+  m_EditorClassIdentifier: 
+  Name: Xpos
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1855888389
+    data2: 1609885230
+  Exists: 0

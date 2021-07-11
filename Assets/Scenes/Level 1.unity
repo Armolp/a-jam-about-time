@@ -1689,7 +1689,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8906921034095221581, guid: 6356207a158de9e45bb39ca1c65f750f, type: 3}
   m_PrefabInstance: {fileID: 1499233292}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1351342126 stripped
+  m_GameObject: {fileID: 645673114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Mx/Music Lvl1
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &645673116
 Transform:
   m_CorrespondingSourceObject: {fileID: 5206399535108962002, guid: c2708431e3ba5814d90e98625185f7f8, type: 3}
   m_PrefabInstance: {fileID: 633306467}

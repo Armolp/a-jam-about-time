@@ -1345,7 +1345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913623460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 138714473}
@@ -1689,24 +1689,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8906921034095221581, guid: 6356207a158de9e45bb39ca1c65f750f, type: 3}
   m_PrefabInstance: {fileID: 1499233292}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645673114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Mx/Music Lvl1
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 1
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!4 &645673116
+--- !u!4 &1351342126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5206399535108962002, guid: c2708431e3ba5814d90e98625185f7f8, type: 3}
   m_PrefabInstance: {fileID: 633306467}
@@ -2452,7 +2435,7 @@ PrefabInstance:
     - target: {fileID: 6668797147164481135, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5441223297315994465, guid: f2b5223faf29a5246bb926773d8a99ac, type: 3}
+      objectReference: {fileID: 21300000, guid: e4b70bbdc06bf42448eee357a421990e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cd3da7507867e46b3fbcbc3e4c61a7, type: 3}
 --- !u!1001 &9139855979043574985
